@@ -3,10 +3,10 @@
 """
 from flask import jsonify
 
-from status_server.api.v1.views import app_views
+from api.v1.views import app_views
 
 
-@app_views.route('/api/v1/views/', methods=['GET'], strict_slashes=False)
+@app_views.route('/status', methods=['GET'], strict_slashes=False)
 def status():
     """ Status of the web server
     """
